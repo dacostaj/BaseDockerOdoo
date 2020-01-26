@@ -5,8 +5,6 @@ After=docker.service
 
 [Service]
 Type=oneshot
-Restart=always
-RestartSec=1
 RemainAfterExit=yes
 WorkingDirectory=/opt/odoo
 ExecStart=/usr/local/bin/docker-compose up -d
