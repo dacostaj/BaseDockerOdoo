@@ -30,21 +30,19 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-
 
 sudo chmod +x /usr/local/bin/docker-compose
 
-# muevo todo el proyecto a la ruta /opt/odoo/
-
-sudo mkdir -p /opt/odoo/
-
-sudo mv * /opt/odoo/
-
-sudo cd /opt/odoo/
-
 # agrega el servicio para ejecutar automaticamente en docker-compose con el sistema
 sudo chmod 775 docker-compose-app.service
 
 sudo mv docker-compose-app.service /etc/systemd/system/
 
+# muevo todo el proyecto a la ruta /opt/odoo/
+
+sudo mkdir -p /opt/odoo/
+
+sudo cp -a . /opt/odoo/
+
+sudo rm -rf *
+
+#Se habilita el servicio creado
+
 sudo systemctl enable docker-compose-app.service
-
-
-
-
