@@ -43,6 +43,6 @@ sudo cp -a . /opt/odoo/
 
 sudo rm -rf *
 
-#Se habilita el servicio creado
+# Se habilita el servicio creado
 
 sudo systemctl enable docker-compose-app.service
