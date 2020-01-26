@@ -1,0 +1,14 @@
+[Unit]
+Description=Este script arrancara automaticamente nuestro docker-compose
+After=network.target docker.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=dacostaj
+ExecStart=/home/$USER/BaseDockerOdoo/initDockerCompose.sh
+
+[Install]
+WantedBy=multi-user.target

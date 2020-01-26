@@ -30,4 +30,12 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-
 
 sudo chmod +x /usr/local/bin/docker-compose
 
+# agrega el servicio para ejecutar automaticamente en docker-compose con el sistema
+
+mv /home/$USER/BaseDockerOdoo/servicioDockerCompose.service /etc/systemd/system/
+
+sudo systemctl enable servicioDockerCompose.service
+
+sudo systemctl start servicioDockerCompose.service
+
 
