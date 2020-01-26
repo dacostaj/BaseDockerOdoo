@@ -34,8 +34,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 sudo mv /home/$USER/BaseDockerOdoo/servicioDockerCompose.service /etc/systemd/system/
 
-sudo systemctl enable servicioDockerCompose.service
+sudo chmod +x /home/$USER/BaseDockerOdoo/initDockerCompose.sh
 
-sudo systemctl start servicioDockerCompose.service
+sudo systemctl enable servicioDockerCompose.service
 
 
