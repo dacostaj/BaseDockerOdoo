@@ -57,7 +57,7 @@ sudo systemctl start docker-compose-app.service
 
 sudo docker exec -d odoo_12 /usr/bin/odoo -u base -d odoo
 
-echo "En 3 minutos finalizamos"
+echo "Ya estamos por finalizar"
 sudo sleep 180
 
 sudo docker restart odoo_12
