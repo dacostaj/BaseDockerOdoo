@@ -59,4 +59,7 @@ sudo timeout -s KILL 2m docker exec -it odoo_12 /usr/bin/odoo -u base -d odoo
 
 sudo docker restart odoo_12
 
-echo "Script finalizado - Att Dickson Manuel Acosta Julio"
+echo "Script finalizado"
+echo "Ingrese a través de su direccion ip por el puerto 8089"
+echo "ejp http://ip address:8089/"
+echo "Att Dickson Manuel Acosta Julio"
