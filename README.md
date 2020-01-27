@@ -13,7 +13,19 @@
 
 - Podrá ingresar a odoo por medio de su ip por el puerto 8089 ejp http://ip address:8089/
 
+# Servicios creados
 
+Para ver el estado de los servicios creados puede ejecutar el siguiente comando.
+
+`sudo systemctl status docker-compose-app.service`
+
+Para ver iniciar manulmente los servicios creados puede ejecutar el siguiente comando.
+
+`sudo systemctl start docker-compose-app.service`
+
+Para apagar manualmente de los servicios creados puede ejecutar el siguiente comando.
+
+`sudo systemctl stop docker-compose-app.service`
 
 
 # `Autor`
