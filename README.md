@@ -9,11 +9,8 @@
 - Dentro de repositorio clonado se encuentra un archivo con el nombre ***installDockerLinux.sh***, darle permisos de ejecución con el comando `sudo chmod 775 installDockerLinux.sh` 
  
 
-- Luego ejecutar el script con el comando  `sh installDockerLinux.sh` . este nos descargará y creará todo lo necesario para utilizar nuestro docker.
+- Luego ejecutar el script con el comando  `sh installDockerLinux.sh` . este nos descargará y creará todo lo necesario para el despliegue de nuestro odoo en docker.
 
-- Despues de esto nos vamos a la ruta ***/opt/odoo/*** con el comando  `cd /opt/odoo/` 
-
-- Allí ejecutamos el siguiente comando para crear automaticamente nuestros contenedores.
 
 
 

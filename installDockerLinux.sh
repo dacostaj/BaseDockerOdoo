@@ -48,11 +48,16 @@ sudo rm -rf *
 sudo systemctl enable docker-compose-app.service
 
 # Se levanta el servicio
-echo "Por favor espere a que termine el proceso de creacion de contenedores esto tomara algunos minutos"
+echo "Por favor espere..........."
+echo "Estamos desplegando odoo en docker...."
+echo "Esto tomara algunos minutos......."
+echo "Tomese un tinto mientras terminamos......."
 
 sudo systemctl start docker-compose-app.service
 
-sudo docker exec -it odoo_12 /usr/bin/odoo -u base -d odoo
+sudo docker exec -d odoo_12 /usr/bin/odoo -u base -d odoo
+
+sudo sleep 60
 
 sudo docker restart odoo_12
 
