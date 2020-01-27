@@ -46,3 +46,7 @@ sudo rm -rf *
 # Se habilita el servicio creado
 
 sudo systemctl enable docker-compose-app.service
+
+# Se levanta el servicio
+
+sudo systemctl start docker-compose-app.service
