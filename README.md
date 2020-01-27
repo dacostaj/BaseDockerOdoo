@@ -11,6 +11,8 @@
 
 - Luego ejecutar el script con el comando  `sh installDockerLinux.sh` . este nos descargará y creará todo lo necesario para el despliegue de nuestro odoo en docker.
 
+- Podrá ingresar a odoo por medio de su ip por el puerto 8089 ejp http://ip address:8089/
+
 
 
 
