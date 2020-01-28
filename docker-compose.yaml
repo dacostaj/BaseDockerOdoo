@@ -1,8 +1,8 @@
 version: '2.1'
 services:
   db:
-    container_name: db_10
-    image: postgres:10
+    container_name: db_12
+    image: postgres:12
     environment:
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
@@ -20,7 +20,7 @@ services:
     volumes:
       - odoo-web-data:/var/lib/odoo
       - ./docker:/etc/odoo/
-      - ./addons:/mnt/extra-addons
+      - ./addons:/mnt/extra-addons/localizacion
 volumes:
   odoo-web-data:
   odoo-db-data:
