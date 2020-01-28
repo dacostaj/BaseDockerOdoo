@@ -46,3 +46,20 @@ sudo rm -rf *
 # Se habilita el servicio creado
 
 sudo systemctl enable docker-compose-app.service
+
+# Se levanta el servicio
+echo "Por favor espere..........."
+echo "Estamos desplegando odoo en docker...."
+echo "Esto tomara algunos minutos......."
+echo "Tomese un tinto mientras terminamos......."
+
+sudo systemctl start docker-compose-app.service
+
+sudo timeout -s KILL 2m docker exec -it odoo_12 /usr/bin/odoo -u base -d odoo
+
+sudo docker restart odoo_12
+
+echo "Script finalizado"
+echo "Ingrese en su navegador digitando su direccion ip por el puerto 8089 por ejemplo:"
+echo "http://ip address:8089/"
+echo "Att Dickson Manuel Acosta Julio"
