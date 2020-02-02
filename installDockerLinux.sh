@@ -60,6 +60,6 @@ sudo timeout -s KILL 4m docker exec -it odoo_12 /usr/bin/odoo -u base -d odoo
 sudo docker restart odoo_12
 
 echo "Script finalizado"
-echo "Ingrese en su navegador digitando su direccion ip por el puerto 8089 por ejemplo:"
-echo "http://ip address:8089/"
+echo "Ingrese en su navegador digitando su direccion ip por ejemplo:"
+echo "http://ip address/"
 echo "Att Dickson Manuel Acosta Julio"
