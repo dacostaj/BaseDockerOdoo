@@ -55,7 +55,7 @@ echo "Tomese un tinto mientras terminamos......."
 
 sudo systemctl start docker-compose-app.service
 
-sudo timeout -s KILL 2m docker exec -it odoo_12 /usr/bin/odoo -u base -d odoo
+sudo timeout -s KILL 4m docker exec -it odoo_12 /usr/bin/odoo -u base -d odoo
 
 sudo docker restart odoo_12
 
